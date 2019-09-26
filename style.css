@@ -1,6 +1,12 @@
 body, html {
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
+  /* overflow: hidden; */
+}
+
+a, button {
+  cursor: pointer;
 }
 
 * {
@@ -23,6 +29,8 @@ a {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 10;
+
 }
 
 .accountMenu {
@@ -34,16 +42,22 @@ a {
 .title {
   flex-grow: 2;
   text-align: center;
-  font-size: 1.5em;
+  /* width: 100%; */
+  height: 40px;
+  margin: 10px 0;
 }
 
-header a, .title {
+.title img {
+  height: 100%;
+}
+
+header a {
   padding: 10px;
 }
 
 /*PADDING POD STICKY MENU - ZMIEŃ WRAZ Z WIELKOŚCIĄ EKRANU?*/
 nav {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .shopMenu {
@@ -88,7 +102,63 @@ nav {
 }
 
 .galleryCarousel a img {
-  width: 22%;
+  width: 20%;
   max-width: 400px;
   margin: 0 10px;
 }
+
+.picAndButtonContainer a img {
+  width: 20%;
+  max-width: 400px;
+  margin: 0 10px;
+}
+
+.picAndButtonContainer {
+  position: relative;
+  z-index: -10;
+
+}
+
+.picButtons {
+  
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px #fff solid;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 1.2em;
+  font-weight: 560;
+  
+  /*COOL ANIMATION*/
+  /* transition: 0.8s;
+  position: relative;
+  overflow: hidden; */
+}
+
+/*COOL ANIMATION*/
+/* .picButtons:hover {
+  color: #000;
+}
+
+.picButtons::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #fff;
+  z-index: -1;
+  transition: 0.8s;
+
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.picButtons:hover::before {
+  height: 180%;
+} */
