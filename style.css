@@ -111,7 +111,7 @@ nav {
   z-index: -10;
 }
 
-.picAndButtonContainer a img {
+.galleryCarousel .picAndButtonContainer a img {
   width: 20%;
   max-width: 400px;
   margin: 0 10px;
@@ -132,60 +132,23 @@ nav {
   font-weight: 560;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .galleryCarousel {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+    display: none;
   }
-  .picAndButtonContainer {
-    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .your-class, .slick-list, .draggable {
+    display: none !important;
   }
-} */
-
-.carouselBox {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
-.content li {
-  list-style: none;
-  width: 100%;
+.your-class {
   text-align: center;
+  margin: 20px 0;
 }
 
-.active { 
-  height: 500px;
-}
-
-.active li {
-  position: absolute;
-  display: none;
-  /* top: -200px; */
-}
-
-.active li.current {
-  /* top: 0px; */
-  display: inline;
-}
-
-.active .buttons {
-  padding: 5px 0;
-  background: #eee;
-  text-align: center;
-  z-index: 5;
-  position: relative;
-}
-
-.carouselbox button {
-  border: none;
-  display: none;
-}
-.active button {
-  display: block;
-} 
-.offscreen {
-  position: absolute;
-  left: -2000px;
+.your-class span a img {
+  width: 100%;
 }
