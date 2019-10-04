@@ -136,6 +136,9 @@ nav {
   .galleryCarousel {
     display: none;
   }
+  .picButtons {
+    z-index: 9;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -151,4 +154,32 @@ nav {
 
 .your-class span a img {
   width: 100%;
+}
+
+/* POLECANE */
+.polecanePasek {
+  display: flex;
+
+  letter-spacing: 2.5px;
+  font-size: 1.5em;
+}
+
+.polecanePasek:before, .polecanePasek:after {
+  color: gray;
+  content: '';
+  flex: 1;
+  border-bottom: solid 1px;
+  margin: auto 0.25em;
+}
+
+.product {
+  width: 180px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.polecane {
+  display: flex;
 }
